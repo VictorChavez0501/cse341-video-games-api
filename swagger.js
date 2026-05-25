@@ -5,7 +5,7 @@ const doc = {
     title: 'Video Games API',
     description: 'CRUD API for games and players'
   },
-  host: 'localhost:3000',
+  host: 'cse341-video-games-api-z4xu.onrender.com',
   schemes: ['http']
 };
 

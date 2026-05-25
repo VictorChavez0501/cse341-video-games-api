@@ -5,7 +5,7 @@
     "description": "CRUD API for games and players",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "cse341-video-games-api-z4xu.onrender.com",
   "basePath": "/",
   "schemes": [
     "http"
