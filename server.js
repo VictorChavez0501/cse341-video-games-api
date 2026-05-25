@@ -1,14 +1,15 @@
 const express = require('express');
 const mongodb = require('./db/connect');
 
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger-output.json');
+
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000;
 
 app.use(express.json());
 
-app.get('/', (req, res) => {
-  res.send('Video Games API is running');
-});
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.use('/games', require('./routes/games'));
 app.use('/players', require('./routes/players'));
