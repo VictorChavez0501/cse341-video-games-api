@@ -1,0 +1,32 @@
+{
+  "name": "cse341-video-games-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VictorChavez0501/cse341-video-games-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/VictorChavez0501/cse341-video-games-api/issues"
+  },
+  "homepage": "https://github.com/VictorChavez0501/cse341-video-games-api#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongodb": "^7.2.0",
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.1",
+    "validator": "^13.15.35"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

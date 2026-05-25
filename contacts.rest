@@ -1,0 +1,81 @@
+### GET ALL GAMES
+GET http://localhost:3000/games
+
+### GET GAME BY ID
+GET http://localhost:3000/games/PUT_GAME_ID_HERE
+
+### CREATE GAME
+POST http://localhost:3000/games
+Content-Type: application/json
+
+{
+  "title": "Fortnite",
+  "genre": "Battle Royale",
+  "platform": "PC",
+  "developer": "Epic Games",
+  "releaseYear": 2017,
+  "rating": 9,
+  "multiplayer": true,
+  "price": 0
+}
+
+### UPDATE GAME
+PUT http://localhost:3000/games/PUT_GAME_ID_HERE
+Content-Type: application/json
+
+{
+  "title": "Fortnite Updated",
+  "genre": "Battle Royale",
+  "platform": "PC",
+  "developer": "Epic Games",
+  "releaseYear": 2017,
+  "rating": 10,
+  "multiplayer": true,
+  "price": 5
+}
+
+### DELETE GAME
+DELETE http://localhost:3000/games/PUT_GAME_ID_HERE
+
+##################################################
+
+### GET ALL PLAYERS
+GET http://localhost:3000/players
+
+### GET PLAYER BY ID
+GET http://localhost:3000/players/PUT_PLAYER_ID_HERE
+
+### CREATE PLAYER
+POST http://localhost:3000/players
+Content-Type: application/json
+
+{
+  "username": "VictorPlayer",
+  "favoriteGame": "Fortnite",
+  "country": "Guatemala",
+  "hoursPlayed": 350
+}
+
+### UPDATE PLAYER
+PUT http://localhost:3000/players/PUT_PLAYER_ID_HERE
+Content-Type: application/json
+
+{
+  "username": "VictorPlayerUpdated",
+  "favoriteGame": "Minecraft",
+  "country": "Guatemala",
+  "hoursPlayed": 500
+}
+
+### DELETE PLAYER
+DELETE http://localhost:3000/players/PUT_PLAYER_ID_HERE
+
+##################################################
+
+### VALIDATION TEST (SHOULD RETURN 400)
+POST http://localhost:3000/games
+Content-Type: application/json
+
+{
+  "genre": "Action"
+}
