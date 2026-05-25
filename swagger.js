@@ -6,7 +6,7 @@ const doc = {
     description: 'CRUD API for games and players'
   },
   host: 'cse341-video-games-api-z4xu.onrender.com',
-  schemes: ['http']
+  schemes: ['https']
 };
 
 const outputFile = './swagger-output.json';

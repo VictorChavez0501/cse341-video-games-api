@@ -8,7 +8,7 @@
   "host": "cse341-video-games-api-z4xu.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/games/": {
